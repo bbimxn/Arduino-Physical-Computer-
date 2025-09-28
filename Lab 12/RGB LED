@@ -1,0 +1,56 @@
+const int RED_PIN = 9;
+const int GREEN_PIN = 6;
+const int BLUE_PIN = 3;
+
+void setup() {
+  // กำหนดพอร์ตให้เป็น OUTPUT
+  pinMode(RED_PIN, OUTPUT);
+  pinMode(GREEN_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);
+}
+
+void loop() {
+  //high = off low = on
+  //red
+  digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN,HIGH);
+  digitalWrite(BLUE_PIN,HIGH);
+  delay(1000);
+
+  //green
+  digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN,LOW);
+  digitalWrite(BLUE_PIN,HIGH);
+  delay(1000);
+
+  //blue
+  digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN,HIGH);
+  digitalWrite(BLUE_PIN,LOW);
+  delay(1000);
+
+
+  //cyan
+  digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN,LOW);
+  digitalWrite(BLUE_PIN,LOW);
+  delay(1000);
+
+  //magenta
+  digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN,HIGH);
+  digitalWrite(BLUE_PIN,LOW);
+  delay(1000);
+
+  //yellow
+  digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN,LOW);
+  digitalWrite(BLUE_PIN,HIGH);
+  delay(1000);
+
+  //white
+  digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN,LOW);
+  digitalWrite(BLUE_PIN,LOW);
+  delay(1000);
+}
