@@ -1,0 +1,25 @@
+int brightness1 = 0;
+int brightness2 = 0;
+
+void setup(){
+  pinMode(5,OUTPUT);
+  pinMode(6,OUTPUT);
+}
+
+void loop(){
+  analogWrite(5,brightness1);
+  brightness1 += 1;
+
+  analogWrite(6,brightness2);
+  brightness2 += 2;
+
+  if (brightness1 > 255) {
+    brightness1 = 0;
+  }
+  if (brightness2 > 255) {
+    brightness2 = 0;
+  }
+
+  delay(10);
+
+}
